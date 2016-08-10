@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cat Clicker Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+
+<body>
+	<div class="dropdown">
+	  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">My Cats
+	  <span class="caret"></span></button>
+	  <ul id="dropMenu" class="dropdown-menu">
+	</div>
+	<!-- fyi, you cannot add content directly to these bootstrap classes ex. row text-center -->
+	<div id="placeholder" class="row text-center">
+        <h2 id="name">NM</h2>
+        <img id="img" src="">
+        <div id="count">Count</div>
+    </div>
+    <br>
+    <button id="adButton">admin button</button>
+    <div id="admin" class="row text-center">
+    <!-- action="benjaminmartin6683@gmail.com" method = "POST" -->
+    	<form  id="form1" method = "GET">
+			<label for="name">New Name</label>
+			<input type="text" name="new name" value="default">
+			<br>
+			<label for="url">New URL</label>
+			<input type="text" name="new url" value="default">
+			<br>
+			<label for="count">New Count</label>
+			<input type="text" name="new count" value="default">
+		</form>
+		<input type="submit" form="form1" value="Subbymit">
+		<button id="cancel">cancel</button>
+    </div>
+
+	<script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="updatedapp.js"></script>
+</body>
+</html>
